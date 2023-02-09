@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.nm {
+    background-color: #344a72;
+    
+    font-family: "Roboto", sans-serif;
+  }
+  .nm .nav a{
+
+    text-decoration: none;
+    color: white;
+  }
+/* start nav */
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+}
+.nav ul{
+    display: flex;
+    
+}
+.nav ul li{
+    margin-top: 20px;
+    padding: 15px;
+    align-items: center;
+    
+}
+.nav ul li a{
+    color: rgb(64, 0, 255);
+    text-decoration: none;
+    font-size: 17px;
+
+}
+.nav ul li a:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 3p solid blue;
+    border-radius: 10px;
+}
+    /* end nav */
+    *{
+        margin:0;
+        padding:0;
+    }
+    nav.navbar{
+        background-color: rgb(238, 238, 228);
+    }
+    nav.ul.a{
+        font-weight: bold;
+    }
+    div.img{
+        background: url(/images/istockphoto-1256567226-170667a.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height:100vh ;
+        position: relative;
+    }
+    .bg{
+        width: 100%;
+        height:92.6vh ;
+        background-color: rgba(0, 0, 0, 0.611); 
+    }
+    h1.des{
+        position: absolute;
+        top: 10%;
+        right: 40%;
+    
+    }
+    p.pp{
+        position: absolute;
+        top: 35%;
+        right: 5%;
+        font-weight: bold;
+        font-size: 28px;
+    }
+     button{
+        position: absolute;
+        top: 55%;
+        right: 5%;
+        border: 3px solid red;
+        border-radius: 20px; 
+        background-color:   #860070;
+    }
+    button a{
+        text-decoration: none; 
+        font-weight: bold;
+        font-size: 20px;
+        padding: 15px;
+        color: #ffffff;
+    }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+</head>
+<body>
+  <!-- start navbar -->
+  <nav class="nav">
+    <h1><a href="index.html">Online Exam</a></h1>
+    <ul>
+        <li><a href="login.html">انشاء حساب</a></li>
+        <li><a href="login.html"> تسجيل دخول</a></li>
+        <li><a href="desc.html">شروط الاستحدام</a></li>
+        <li><a href="index.html">الصفحه الرئيسية</a></li>
+    </ul>
+</nav>
+<!-- end navbar -->
+  <!-- start login -->
+  <div class="login1 mb-5 mt-5 d-flex justify-content-center">
+  <button type="button" class="btn1 m-3 p-2"  onclick="div1()" value="div 1">تسجيل دخول</button>
+    <button type="button" class="btn2 m-3 p-2"  onclick="div2()" value="div 2">انشاء حساب</button>
+  </div>
+
+
+
+
+  
+    <div id="div1">
+      <form id="signup-form">
+        <h1 class="dd text-white">انشاء حساب</h1>
+        <input id="name1" type="text" placeholder="Username" value="" required>
+        <input id="email1" type="email" placeholder="E-mail" value="" required>
+        <input id="pass1" type="password" placeholder="password" value="" required>
+        <input id="pass1" type="password" placeholder="Re-Password" value="" required>
+        <br>
+        <input id="signup_btn" type="submit" value="Signup">
+      </form>
+    </div>
+  
+    <div id="div2">
+      <form id="login-form">
+        <h1 class="dd text-white">تسجيل دخول</h1>
+        <input id="name2" type="text" placeholder="Username" value="" required>
+        <input id="pass2" type="password" placeholder="Password" value="" required>
+        <br>
+        <button id="login_btn" type="submit" value="moveto window" onclick="movetowin()">Login</button>
+      </form>
+    </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      var win1;
+      function div1() {
+        document.getElementById('div1').style.display = "none"
+        document.getElementById('div2').style.display = "block"
+        
+      }
+      
+      function div2() {
+        document.getElementById('div1').style.display = "block"
+        document.getElementById('div2').style.display = "none"
+        
+      }
+        
+      
+
+    //  start login & singup 
+    $(document).ready(function () {
+      $("#signup-form").submit(function () {
+        var nm1 = $("#name1").val();
+        var ps1 = $("#pass1").val();
+        localStorage.setItem("n1", nm1);
+        localStorage.setItem("p1", ps1);
+        
+      });
+
+    $("#login-form").submit(function () {
+      var enteredName = $("#name2").val();
+      var enteredPass = $("#pass2").val();
+
+      var storedName = localStorage.getItem("n1");
+      var storedPass = localStorage.getItem("p1");
+
+      if (enteredName == storedName && enteredPass == storedPass) {
+        window.open("dashboard/dashboard.html","_blank")
+      }
+      else {
+        alert("Username and Password do not match!");
+      }
+      
+    });
+    
+  });
+  //  end login & singup 
+
+    </script>
+</body>
+</html>
