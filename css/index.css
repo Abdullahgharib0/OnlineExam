@@ -50,14 +50,14 @@
         margin:0;
         padding:0;
     }
-    nav.navbar{
+   .navbar{
         background-color: rgb(238, 238, 228);
     }
-    nav.ul.a{
+    .ul.a{
         font-weight: bold;
     }
-    div.img{
-        background: url(/images/istockphoto-1256567226-170667a.jpg);
+    .img{
+        background: url(../images/istockphoto-1256567226-170667a.jpg);
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
@@ -71,13 +71,13 @@
         height:92.6vh ;
         background-color: rgba(0, 0, 0, 0.611); 
     }
-    h1.des{
+    .des{
         position: absolute;
         top: 10%;
         right: 40%;
     
     }
-    p.pp{
+    .pp{
         position: absolute;
         top: 35%;
         right: 5%;
