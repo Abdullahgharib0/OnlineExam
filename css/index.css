@@ -57,7 +57,7 @@
         font-weight: bold;
     }
     .img{
-        background: url(../images/istockphoto-1256567226-170667a.jpg);
+        background: url(/images/istockphoto-1256567226-170667a.jpg);
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
