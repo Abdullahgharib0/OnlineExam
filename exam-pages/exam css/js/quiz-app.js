@@ -213,5 +213,5 @@ function countdown(duration, count) {
 }
 
 function bt(){
-  btn.innerHTML = `<a href='../OnlineExam/dashboard/dashboard.html' style="background-color: #0075ff; display: flex; justify-content: center; width: 800px; padding: 15px; color: #fff; font-weight: bold; font-size: 20px; cursor: pointer; border-radius: 10px; margin: 20px auto; position: absolute; top: 40%; left: 26.3%; text-decoration: none;">Back Dashboard</a>`;
+  btn.innerHTML = `<a href='/OnlineExam/dashboard/dashboard.html' style="background-color: #0075ff; display: flex; justify-content: center; width: 800px; padding: 15px; color: #fff; font-weight: bold; font-size: 20px; cursor: pointer; border-radius: 10px; margin: 20px auto; position: absolute; top: 40%; left: 26.3%; text-decoration: none;">Back Dashboard</a>`;
 }
